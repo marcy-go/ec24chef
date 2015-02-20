@@ -11,8 +11,8 @@ func main() {
   c := cli.NewCLI("ec24chef", "0.0.1")
   c.Args = os.Args[1:]
   c.Commands = map[string]cli.CommandFactory{
-    "setup": func() (cli.Command, error) {
-      return &Setup{}, nil
+    "configure": func() (cli.Command, error) {
+      return &Configure{}, nil
     },
     // "run": func() (cli.Command, error) {
     //   return &Run{}, nil
